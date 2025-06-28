@@ -1,0 +1,291 @@
+:root {
+  --color-primary: #004e92;
+}
+
+/* --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; */
+/* 
+    yellow
+
+        background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important; */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.b-radius {
+  border-radius: 10px;
+}
+/* Common CSS */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-3-column > * {
+  flex: 0 1 33.33%;
+  text-align: center;
+}
+.flex-4-column > * {
+  flex: 1 1 33.33%;
+  text-align: center;
+}
+input {
+  padding: 10px;
+  max-width: 300px;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  max-width: 100%;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+input[type="text"]:hover {
+  box-shadow: 0 0 5pt 0.5pt #dad1d1;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 5pt 2pt #a19898;
+  outline-width: 0px;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 0 0 5pt 0.5pt #dad1d1;
+  background: aliceblue;
+  border-radius: 10px;
+  transition: 1s;
+  margin-left: 10px;
+}
+button:hover {
+  background-color: #dad1d1;
+}
+.layout-container {
+  display: flex;
+}
+.layout-col-6 {
+  width: 50%;
+}
+.layout-col-4 {
+  width: 33.33%;
+  padding: 14px;
+}
+.layout-col-3 {
+  width: 25%;
+  padding: 14px;
+}
+.layout-col-2 {
+  width: 16.6667%;
+  padding: 14px;
+}
+.layout-row {
+  display: flex;
+  justify-content: center;
+}
+.card-gray {
+  background: #f7f7f7;
+}
+.card-white {
+  background-color: #fff;
+}
+.container-shadow {
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+}
+.j-center {
+  justify-content: center;
+}
+.h-400 {
+  height: 400px;
+}
+/* Header */
+header {
+  padding: 25px;
+}
+.logo {
+  font-size: 35px;
+  color: var(--color-primary);
+}
+/* Search Bar */
+.search-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+.suggestion-list {
+  position: absolute;
+  padding: 10px;
+  list-style: none;
+  top: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.suggestion-list li {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.search-container svg {
+  color: rgb(45, 45, 45);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col-6 {
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  max-width: 50%;
+}
+/* Weather Card */
+.main {
+  padding: 25px;
+}
+
+.weather-card {
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: flex 0.3s ease;
+  padding: 30px;
+}
+
+.card-top {
+  display: flex;
+  flex: 0 1 25%;
+  justify-content: space-between;
+}
+.card-top img {
+  width: 80px;
+  object-fit: contain;
+}
+.card-top h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card-top p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.card-top .temprature {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.card-top .location {
+  text-align: end;
+  font-size: 20px;
+}
+.card-sunny {
+  background: #e3debc;
+  background: radial-gradient(
+    circle,
+    rgba(227, 222, 188, 1) 0%,
+    rgb(230 230 96) 94%,
+    rgba(230, 219, 11, 1) 100%
+  );
+}
+.card-bottom {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card-cloudy {
+  background: linear-gradient(135deg, #d7e1ec, #f5f7fa);
+}
+.card-snow {
+  background: linear-gradient(135deg, #d6cccc, #ffffff);
+} 
+.card-night {
+  background: linear-gradient(135deg, #201d1d, #191717);
+} 
+.card-rainy {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+.card-night{
+  color: #fff;
+}
+.card-night button{
+  color: #000;
+  background-color: #c2e9fb !important;
+}
+/* Weather List */
+.weather-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.single-card {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.single-card img{
+  width: 30px;
+}
+.single-card p {
+  font-size: 26px;
+}
+.button-container {
+  text-align: center;
+  background: transparent;
+  margin-bottom: 20px;
+}
+.button-container button {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0 0 5pt 0.5pt #909d26;
+}
+.delete-button {
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  .logo {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .flex-3-column > * {
+    flex: 1 1 100%;
+    text-align: center !important;
+  }
+  .github-icon {
+    display: none;
+  }
+}

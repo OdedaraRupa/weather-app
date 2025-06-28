@@ -4,7 +4,7 @@ import cloud from "../Images/cloudy.png";
 import rain from "../Images/rainy.png";
 import sun from "../Images/sun.png";
 import snow from "../Images/snow.svg";
-import moon from "../Images/moon.svg";
+import moon from "../Images/moon.png";
 const WeatherList = ({ data, onSelect, onDelete }) => {
   const weatherMain = data.weather[0].main.toLowerCase(); // e.g., "rain", "clear", "snow"
   const icon = data.weather[0].icon; // e.g., "01d", "10n"

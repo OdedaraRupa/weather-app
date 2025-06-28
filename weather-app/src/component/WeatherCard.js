@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import cloud from "../Images/cloudy.png";
 import rain from "../Images/rainy.png";
 import snow from "../Images/snow.svg";
-import moon from "../Images/moon.svg";
+import moon from "../Images/moon.png";
 const WeatherCard = ({ weatherData, forecast, onAddToList }) => {
   const weatherMain = weatherData?.weather?.[0]?.main?.toLowerCase() || "";
 const icon = weatherData?.weather?.[0]?.icon || "";

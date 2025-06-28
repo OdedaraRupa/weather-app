@@ -143,6 +143,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 10000;
 }
 .suggestion-list li {
   background-color: #f7f7f7;
@@ -287,5 +288,36 @@ header {
   }
   .github-icon {
     display: none;
+  }
+  .layout-col-6{
+    width: 100%;
+
+  }
+  .layout-col-2{
+    width: 100%;
+  }
+  .layout-container{
+    display: block;
+  }
+  .layout-col-3{
+    width: 100%;
+    padding: 0;
+    border: 1px solid#d3d3d3;
+  }
+  .layout-row {
+    display: block;
+    text-align: center;
+  }
+  .weather-list .layout-row{
+    display: flex;
+  }
+  .single-card{
+    margin-left: 0;
+  }
+  .h-400{
+    height: auto;
+  }
+  .search-container .layout-row{
+    display: flex;
   }
 }

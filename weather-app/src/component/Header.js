@@ -8,12 +8,10 @@ const Header = () => {
       <header>
         <div className="container flex-3-column">
           <div className="logo"> 🌤️ WeatherNow</div>
-          <div className="search-container">
-           
-          </div>
+        
           <div className="github-icon">
             <a
-              href="https://github.com/your-repo-url"
+              href="https://github.com/OdedaraRupa/weather-app.git"
               target="_blank"
               rel="noopener noreferrer"
             >
